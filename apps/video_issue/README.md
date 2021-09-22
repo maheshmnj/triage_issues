@@ -1,9 +1,4 @@
-# triage_issues
-
-This repo has been used for these issues
-
-Routes not working: https://github.com/flutter/flutter/issues/89763
-Video not playing on IOS 13: https://github.com/flutter/flutter/issues/90451
+# video_issue
 
 A new Flutter project.
 
