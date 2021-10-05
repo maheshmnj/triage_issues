@@ -50,6 +50,15 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'You have pushed the button this many times:',
             ),
+            TextField(
+              decoration: InputDecoration(hintText: 'textfield'),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            TextFormField(
+              decoration: InputDecoration(hintText: 'textfield'),
+            ),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
