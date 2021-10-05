@@ -44,26 +44,29 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            TextField(
-              decoration: InputDecoration(hintText: 'textfield'),
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            TextFormField(
-              decoration: InputDecoration(hintText: 'textfield'),
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              const Text(
+                'You have pushed the button this many times:',
+              ),
+              TextField(
+                decoration: InputDecoration(hintText: 'textfield'),
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              TextFormField(
+                decoration: InputDecoration(hintText: 'textfFormield'),
+              ),
+              Text(
+                '$_counter',
+                style: Theme.of(context).textTheme.headline4,
+              ),
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
