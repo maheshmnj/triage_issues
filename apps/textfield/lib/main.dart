@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 30,
               ),
               TextFormField(
-                decoration: InputDecoration(hintText: 'textfFormield'),
+                decoration: InputDecoration(hintText: 'textFormField'),
               ),
               Text(
                 '$_counter',
