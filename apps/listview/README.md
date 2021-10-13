@@ -1,11 +1,4 @@
-# triage_issues
-
-This repo has been used for these issues
-
-- [Routes not working](https://github.com/flutter/flutter/issues/89763) : [🌎]()
-- [Video not playing on IOS 13](https://github.com/flutter/flutter/issues/90451) : [🌎](https://iosvideoissue.netlify.app/)
-- [textfield issue](https://github.com/flutter/flutter/issues/91240) : [🌎](https://textfield.netlify.app)
-- [flutter listView](https://github.com/flutter/flutter/issues/87975) : [🌎](https://flutterlistview.netlify.app/#/)
+# listview
 
 A new Flutter project.
 
