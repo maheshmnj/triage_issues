@@ -6,6 +6,7 @@ This repo has been used for these issues
 - [Video not playing on IOS 13](https://github.com/flutter/flutter/issues/90451) : [🌎](https://iosvideoissue.netlify.app/)
 - [textfield issue](https://github.com/flutter/flutter/issues/91240) : [🌎](https://textfield.netlify.app)
 - [flutter listView](https://github.com/flutter/flutter/issues/87975) : [🌎](https://flutterlistview.netlify.app/#/)
+- [localization]() : [🌎]()
 
 A new Flutter project.
 

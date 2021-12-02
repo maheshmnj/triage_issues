@@ -1,6 +1,6 @@
 {
-    "name": "routes_issue",
-    "short_name": "routes_issue",
+    "name": "triage_issues",
+    "short_name": "triage_issues",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

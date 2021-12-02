@@ -29,7 +29,7 @@ class Screen1 extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).pushNamed('/screen2');
                 },
-                child: Text('Goto Page2'))));
+                child: const Text('Goto Page2'))));
   }
 }
 
@@ -37,12 +37,31 @@ class Screen2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Screen 2')),
-      body: const Center(
-          child: Text(
-        "Screen 2",
-        style: TextStyle(color: Colors.black),
-      )),
+      appBar: AppBar(
+        title: Text('Screen 2'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            const Text(
+              'Example to show case loading local asset',
+            ),
+            Image.asset(
+              'assets/snippet.png',
+            ),
+            Text(
+              '100',
+              style: Theme.of(context).textTheme.headline4,
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        tooltip: 'Increment',
+        child: const Icon(Icons.add),
+      ),
     );
   }
 }
