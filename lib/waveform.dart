@@ -1,10 +1,9 @@
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({
+class WaveFormSample extends StatelessWidget {
+  const WaveFormSample({
     Key? key,
   }) : super(key: key);
 

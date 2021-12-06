@@ -1,13 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web_plugins/flutter_web_plugins.dart';
+import 'package:routes_issue/background_notifier.dart';
+// import 'package:flutter_web_plugins/flutter_web_plugins.dart';
+import 'package:routes_issue/image_picker.dart';
+import 'package:routes_issue/waveform.dart';
 
 void main() async {
-  setUrlStrategy(PathUrlStrategy());
+  // setUrlStrategy(PathUrlStrategy());
   runApp(MaterialApp(
-    initialRoute: "/screen1",
+    initialRoute: "/home",
     routes: <String, WidgetBuilder>{
-      '/screen1': (BuildContext context) => Screen1(),
-      '/screen2': (BuildContext context) => Screen2()
+      '/home': (BuildContext context) => Home(),
+      '/BackgroundNotifier': (BuildContext context) => const BackgroundNotifier(
+            title: 'BackgroundNotifier',
+          ),
+      '/wave_form': (BuildContext context) => WaveFormSample(),
+      '/image_picker': (BuildContext context) => ImagePickerSample(
+            title: 'image picker sample',
+          ),
     },
     onUnknownRoute: (RouteSettings settings) {
       return MaterialPageRoute<void>(
@@ -19,17 +28,23 @@ void main() async {
   ));
 }
 
-class Screen1 extends StatelessWidget {
+class Home extends StatelessWidget {
+  List<String> widgets = ['image_picker', 'wave_form', 'BackgroundNotifier'];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: const Text('Screen 1')),
-        body: Center(
-            child: ElevatedButton(
-                onPressed: () {
-                  Navigator.of(context).pushNamed('/screen2');
+        body: ListView.separated(
+            separatorBuilder: (context, index) => const Divider(),
+            itemCount: widgets.length,
+            itemBuilder: (x, y) {
+              return ListTile(
+                title: Text('${widgets[y]} sample'),
+                onTap: () {
+                  Navigator.pushNamed(context, '/${widgets[y]}');
                 },
-                child: const Text('Goto Page2'))));
+              );
+            }));
   }
 }
 
