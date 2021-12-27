@@ -27,9 +27,10 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  image_picker: ^0.8.4+3
-  video_player: ^2.2.5
+  image_picker: ^0.8.4+4
+  video_player: ^2.2.6
   webview_flutter: ^2.1.2
+  camera: ^0.9.4+5
   flutter:
     sdk: flutter
 
