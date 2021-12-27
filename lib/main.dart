@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:routes_issue/background_notifier.dart';
 // import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'package:routes_issue/image_picker.dart';
+import 'package:routes_issue/video.dart';
 import 'package:routes_issue/waveform.dart';
+
+import 'camera.dart';
 
 void main() async {
   // setUrlStrategy(PathUrlStrategy());
@@ -13,10 +16,12 @@ void main() async {
       '/BackgroundNotifier': (BuildContext context) => const BackgroundNotifier(
             title: 'BackgroundNotifier',
           ),
-      '/wave_form': (BuildContext context) => WaveFormSample(),
+      '/wave_form': (BuildContext context) => const WaveFormSample(),
       '/image_picker': (BuildContext context) => ImagePickerSample(
             title: 'image picker sample',
           ),
+      '/video_app': (BuildContext context) => VideoApp(),
+      '/camera_app': (BuildContext context) => CameraExampleHome(),
     },
     onUnknownRoute: (RouteSettings settings) {
       return MaterialPageRoute<void>(
@@ -29,7 +34,13 @@ void main() async {
 }
 
 class Home extends StatelessWidget {
-  List<String> widgets = ['image_picker', 'wave_form', 'BackgroundNotifier'];
+  List<String> widgets = [
+    'image_picker',
+    'wave_form',
+    'BackgroundNotifier',
+    'video_app',
+    'camera_app'
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
