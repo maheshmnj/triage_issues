@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:routes_issue/background_notifier.dart';
-// import 'package:flutter_web_plugins/flutter_web_plugins.dart';
-import 'package:routes_issue/image_picker.dart';
+import 'package:routes_issue/search.dart';
 import 'package:routes_issue/video.dart';
 import 'package:routes_issue/waveform.dart';
+// import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
+import 'background_notifier.dart';
 import 'camera.dart';
+import 'image_picker.dart';
 
 void main() async {
   // setUrlStrategy(PathUrlStrategy());
@@ -22,6 +23,7 @@ void main() async {
           ),
       '/video_app': (BuildContext context) => VideoApp(),
       '/camera_app': (BuildContext context) => CameraExampleHome(),
+      '/search_app': (BuildContext context) => SearchDemo(),
     },
     onUnknownRoute: (RouteSettings settings) {
       return MaterialPageRoute<void>(
@@ -39,7 +41,8 @@ class Home extends StatelessWidget {
     'wave_form',
     'BackgroundNotifier',
     'video_app',
-    'camera_app'
+    'camera_app',
+    'search_app'
   ];
   @override
   Widget build(BuildContext context) {
