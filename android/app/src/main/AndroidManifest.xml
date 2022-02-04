@@ -3,6 +3,8 @@
    <application
         android:label="routes_issue"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyDzm8nUdRLg6xtRTIw8Tkru28Uq3nv7FYU"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
