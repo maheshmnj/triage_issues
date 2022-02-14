@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Text Input Home Page'),
+      home: const MyHomePage(title: 'Text Input Home Page'),
     );
   }
 }
@@ -42,6 +42,20 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const TextField(
+              maxLines: 5,
+              decoration: InputDecoration(
+                hintText: 'TextField',
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            TextFormField(
+              decoration: const InputDecoration(
+                hintText: 'TextFormField',
+              ),
+            ),
             IconButton(
                 icon: const Icon(
                   Icons.search,
