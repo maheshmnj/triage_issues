@@ -91,6 +91,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 hintText: 'TextFormField',
               ),
             ),
+            const SizedBox(
+              height: 50,
+            ),
             IconButton(
                 icon: const Icon(
                   Icons.search,
