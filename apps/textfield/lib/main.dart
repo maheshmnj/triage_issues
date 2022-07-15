@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 24.0),
-              child: header('Deployed using Stable 2.10.3'),
+              child: header('Deployed using master 3.1.0-0.0.pre.1594'),
             ),
             trailing('Obscure', isObscure, (x) {
               if (x) {
