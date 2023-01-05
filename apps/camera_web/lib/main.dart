@@ -2,7 +2,7 @@ import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
-void main() {
+void main(List<String> args) {
   runApp(const MyApp());
 }
 
